@@ -1,0 +1,35 @@
+{
+  "name": "event-bus",
+  "version": "1.0.0",
+  "description": "I implement event-bus pattern",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build:src && npm run build:example",
+    "build:example": "webpack --config ./example/webpack.config.js",
+    "build:src": "webpack",
+    "lint:src": "eslint ./src/**/*",
+    "start": "npm run tsc && ts-node example/server.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc -p ./example && tsc"
+  },
+  "keywords": [
+    "event-bus"
+  ],
+  "author": "Katarzyna Ziomek-Zdanowicz",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/nosde": "14.14.20",
+    "@typescript-eslint/eslint-plugin": "4.12.0",
+    "@typescript-eslint/parser": "4.12.0",
+    "eslint": "7.17.0",
+    "eslint-config-standard": "16.0.2",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-promise": "4.2.1",
+    "ts-loader": "8.0.14",
+    "ts-node": "9.1.1",
+    "typescript": "4.1.3",
+    "webpack": "5.12.3",
+    "webpack-cli": "4.3.1"
+  }
+}
